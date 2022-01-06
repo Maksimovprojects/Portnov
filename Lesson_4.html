@@ -5,7 +5,8 @@
     </head>
     <body>
         <div id = "images">
-            <img src="/Users/max/Downloads/img_6785.png">br
+            <img src="/Users/max/Downloads/img_6785.png">
+            <br>
             <!--With attributes-->
             <img src="/Users/max/Downloads/img_6785.png" height="40" width="20">
         </div>
@@ -28,13 +29,13 @@
                 <li>unordered4</li>
             </ul>
         </div>
-        <div>
-            <table border="1", cellspacing="2">
+        <div id = "table">
+            <table border="1", cellspacing="5">
                 <caption>Table name</caption>
                 <tr>
-                    <tr>Maks</tr>
-                    <tr>Maksimov</tr>
-                    <tr>Aleksandrovich</tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Surname</th>
                 </tr>
 
                 <tr>
@@ -42,9 +43,40 @@
                     <td>Maks</td>
                     <td>Maksimov</td>
                 </tr>
-            </table>
+
+                <tr>
+                    <td>2</td>
+                    <td>Sidor</td>
+                    <td>Sodirov</td>
+                </tr>
+            </table><hr>
         </div>
-
-
+        <div id = "form">
+            <form>
+                <label for="user_email">Email: </label>
+                <input type="text" id="usermail" maxlength = "5"> <!--(maxlength is max letters)-->
+                <br>
+                <label for="pw">Password: </label>
+                <input type="password" id="pw" maxlength = "2"> <!--(type = "password" allows to mask the password field)-->
+                <hr>
+                <textarea name="" id="" cols="80" rows="40" readonly>Type your text</textarea>
+                <hr>
+                <label for="radio">Radio button</label><!--Creating radio button-->
+                <input type="radio" id="radio">
+                <hr>
+                <label for="chck">Checkbox</label> <!--Creating checkbox-->
+                <input type="checkbox" id="chck">
+                <hr>
+                <select multiple> <!--put after 'select' multiple(for showing all options),  disabled(to freeze all options)-->
+                    <option value="first_option_1">first option 1</option>
+                    <option value="second_option_2">second option 2</option>
+                    <option value="sthird_option_3">third option 3</option>
+                    <option value="fouth_4">fouth 4</option>
+                </select>
+                <hr>
+                <input type="submit" value="Send">
+                <button type="reset">Reset</button>
+            </form>
+        </div>
     </body>
 </html>
