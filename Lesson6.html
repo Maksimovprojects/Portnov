@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>CSS class</title>
+        <link href="p.css" rel="stylesheet" type="text/css">
+        <style type="text/css">
+            #abc{border: solid; 
+                border-width: 3px;
+            }
+            
+            h1.para{
+                border: solid;
+                border-color: blueviolet;
+                text-align: right;
+            }
+            h4, h1{
+                border-width: 1px; 
+                border: solid;
+                text-align: right;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="inline">
+            <!--Inline CSS-->
+            <p>paragraph with no style</p>
+            <p style="color: blueviolet;font-size: large;">paragraph with style</p>
+            <h1 style="background-color: chocolate; text-align: center;">Blablabla</h1>
+            <h2 style="background-color: crimson;">Crimson color</h2>
+            <h3 style="background-color: #335FFF;">HEX color</h3>
+            <h3 style="background: crimson;">Color of text</h3>
+            <h4>internal style</h4>
+            <h1>internal style for second heading element</h1>
+
+        </div>
+
+        <div id="internal">
+            <!--Internal CSS-->
+            <p id="abc">Style with id selector</p>
+            <h1 class="para">Internal style using class</h1>
+        </div>
+        <div id="external">
+            <!--External CSS-->
+            <p>TEXT by external CSS(green text and red border)</p>
+        </div>
+    </body>
+</html>
